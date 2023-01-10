@@ -1,6 +1,6 @@
 {
   "name": "ends-with-string",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Check if a string or buffer ends with a given string",
   "main": ".auto/build/index.js",
   "author": "Connor White",
