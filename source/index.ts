@@ -6,7 +6,8 @@ export default function endsWith(input: string | Buffer, string: string) {
   } else {
     return Array.from(string).reduceRight((retval, match, index) => {
       const pointer = (input.length-string.length) + index;
-      return retval && charToString(input[pointer]) === match;
+      const char = input[pointer] as string | number;
+      return retval && charToString(char) === match;
     }, true);
   }
 }

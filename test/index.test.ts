@@ -1,5 +1,5 @@
 import { test, expect } from "@jest/globals";
-import endsWith from "../source";
+import endsWith from "../source/index.js";
 
 test("match", () => {
   expect(endsWith("abcde", "de")).toBe(true);
